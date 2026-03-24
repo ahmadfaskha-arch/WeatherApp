@@ -1,16 +1,16 @@
 {
   "name": "frontx1",
   "private": true,
-  "homepage": "https://ahmadfaskha-arch.github.io/WeatherApp",
+  "homepage": "https://ahmadfaskha-arch.github.io/WeatherApp/",
   "version": "0.0.0",
   "type": "module",
 "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
 },
   
   "dependencies": {
