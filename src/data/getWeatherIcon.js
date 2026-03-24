@@ -1,5 +1,5 @@
 export const getWeatherIcon = (weather) => {
-  if (!weather || !weather.main) return "/assets/img/clear.svg";
+  if (!weather || !weather.main) return "assets/img/clear.svg";
 
   const main = weather.main.toLowerCase();
   const icon = weather.icon; // مثل "01d" أو "01n"
@@ -9,35 +9,35 @@ export const getWeatherIcon = (weather) => {
   // 🌞☁️🌧❄️ حالات الطقس
   if (main.includes("clear")) {
     return isNight
-      ? "/assets/img/moon.svg"     // 🌙 ليل
-      : "/assets/img/clear.svg";   // ☀️ نهار
+      ? "assets/img/moon.svg"     // 🌙 ليل
+      : "assets/img/clear.svg";   // ☀️ نهار
   }
 
   if (main.includes("cloud")) {
     return isNight
-    ?"/assets/img/mist.svg"
-    :"/assets/img/clouds.svg"
+    ?"assets/img/mist.svg"
+    :"assets/img/clouds.svg"
     
   }
 
   if (main.includes("rain") || main.includes("drizzle")) {
     return isNight
-    ?"/assets/img/rain-night.svg"
-    :"/assets/img/drizzle.svg"
+    ?"assets/img/rain-night.svg"
+    :"assets/img/drizzle.svg"
   }
 
   if (main.includes("snow")) {
-    return "/assets/img/snow.svg";
+    return "assets/img/snow.svg";
   }
 
   if (main.includes("thunderstorm")) {
-    return "/assets/img/strom.svg";
+    return "assets/img/strom.svg";
   }
 
   if (main.includes("mist") || main.includes("fog") || main.includes("haze")) {
-    return "/assets/img/mist.svg";
+    return "assets/img/mist.svg";
   }
 
   // fallback
-  return "/assets/img/clear.svg";
+  return "assets/img/clear.svg";
 };

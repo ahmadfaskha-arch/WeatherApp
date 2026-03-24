@@ -22,7 +22,7 @@ const HourlyForecastList = ({ item }) => {
 
       <p>{Math.round(item.main.temp)}°C</p>
 
-      <img src="/assets/img/navigation 1.png" alt="" />
+      <img src="assets/img/navigation 1.png" alt="" />
 
       <p>{item.wind.speed} km/h</p>
     </div>

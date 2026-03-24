@@ -1,7 +1,7 @@
 import "./WetherLeft.css";
 const WetherLeft = ({ data }) => {
   if (!data) return <p>Loading...</p>;
-  
+
   const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString([], {
     hour: "2-digit",
     minute: "2-digit",
@@ -21,12 +21,12 @@ const WetherLeft = ({ data }) => {
 
       <div className="sun">
         <div className="sun1">
-          <img src="/assets/img/sunrise1.png" alt="Sunrise" />
+          <img src="assets/img/sunrise1.png" alt="Sunrise" />
           <p>Sunrise {sunrise}</p>
         </div>
 
         <div className="sun2">
-          <img src="/assets/img/sunset2.png" alt="Sunset" />
+          <img src="assets/img/sunset2.png" alt="Sunset" />
           <p>Sunset {sunset}</p>
         </div>
         
