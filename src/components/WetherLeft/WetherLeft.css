@@ -1,0 +1,115 @@
+.wether-le {
+  text-align: center;
+  .temp {
+    h1 {
+      font-size: 80px;
+      font-weight: 700;
+          background: linear-gradient(270deg,#9b9b9b, #292929);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+      
+    }
+    p {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+  .sun {
+    padding-top: 26px;
+    padding-left: 25px;
+    .sun1 {
+      display: flex;
+      max-width: 153.15px;
+      /* justify-content: center; */
+      align-items: center;
+      img {
+        filter: brightness(0);
+      }
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 10.33px;
+        padding-left: 10.82px;
+      }
+    }
+    .sun2 {
+      max-width: 153.15px;
+      display: flex;
+      align-items: center;
+      img {
+        filter: brightness(0);
+      }
+      p {
+        font-size: 20px;
+        font-weight: 600;
+        padding-left: 10.82px;
+      }
+    }
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 1440px)  {
+
+  .wether-le {
+    .temp {
+      h1 {
+        font-size: 65px;
+      }
+
+      p {
+        font-size: 22px;
+      }
+    }
+
+    .sun {
+      padding-top: 20px;
+      padding-left: 15px;
+
+      .sun1,
+      .sun2 {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+/* mobile */
+@media screen and (max-width: 992px){
+
+  .wether-le {
+    .temp {
+      h1 {
+        font-size: 50px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .sun {
+      padding-top: 15px;
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+
+      .sun1,
+      .sun2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        p {
+          font-size: 14px;
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+

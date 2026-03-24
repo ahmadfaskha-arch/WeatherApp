@@ -1,0 +1,74 @@
+.hourly-list {
+  padding: 18px 30px;
+  border-radius: 40px;
+  background: linear-gradient(var(--bg-orang), #f6fad9);
+  &:nth-child(4) {
+    background: linear-gradient(#443d64, #6582c6);
+  }
+  &:nth-child(5) {
+    background: linear-gradient(#443d64, #6582c6);
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
+/* tablet */
+
+@media screen and (max-width: 1440px) {
+  .hourly-list {
+    padding: 10px 10px;
+    border-radius: 35px;
+    /* max-height: fit-content; */
+  }
+  .hourly-list h3 {
+    font-size: 22px;
+  }
+  .hourly-list p {
+    font-size: 18px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .hourly-list:nth-child(4),
+  .hourly-list:nth-child(5) {
+    /* احتفظ بالـ gradient كما هو */
+    background: linear-gradient(#443d64, #6582c6);
+  }
+}
+
+/* للشاشات حتى 992px */
+@media screen and (max-width: 992px) {
+  .hourly-list {
+    padding: 12px 12px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-width: 120px; /* لتظهر ضمن الـ scroll */
+  }
+  .hourly-list h3 {
+    font-size: 20px;
+  }
+  .hourly-list p {
+    font-size: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .hourly-list:nth-child(4),
+  .hourly-list:nth-child(5) {
+    background: linear-gradient(#443d64, #6582c6);
+  }
+}

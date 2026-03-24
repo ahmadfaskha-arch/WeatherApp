@@ -1,0 +1,52 @@
+.hourly-forecast {
+  max-width: 870px;
+  text-align: center;
+  margin-top: 49px;
+  padding-top: 13px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+  background-color: var(--whit-2-1);
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .lists-for {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 38px 80px 16px 80px;
+    /*كانت قبل 19يكسل البادينغ فوق   */
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 1440px) {
+  .hourly-forecast {
+    max-width: 700px;
+    padding: 12px 15px 16px 15px;
+    .lists-for{
+          gap: 12px;
+    padding: 30px 20px 16px 20px;
+    }
+  }
+  .hourly-forecast h2 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hourly-forecast {
+    max-width: 100%;
+    padding: 10px;
+  }
+  .hourly-forecast h2 {
+    font-size: 24px;
+  }
+  .hourly-forecast .lists-for {
+    gap: 10px;
+    padding: 20px 10px;
+    flex-direction: column;
+    overflow-x: auto;
+  }
+}

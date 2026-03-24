@@ -1,0 +1,62 @@
+.dark {
+  /* background-color: var(--dark-bg-black); */
+  background: linear-gradient(300deg,#373636,#383838, #6d6c6c);
+  color: var(--white);
+  .toggle {
+    background-color: var(--whit-2-1);
+    
+  }
+  .main-details {
+    background-color: var(--dark-2-1);
+  }
+  .wether-details {
+    background-color: var(--dark-2-1);
+
+    .wether-le {
+      .temp {
+        h1 {
+          background: linear-gradient(180deg, #ffffff, #d9d9d9, #9a9a9a);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+      .sun{
+        .sun1{
+          img{
+            filter: none;
+          }
+        }
+        .sun2{
+          img{
+            filter: none;
+          }
+        }
+      }
+
+    }
+    .wether-ri{
+      .info{
+        img{
+          filter: none;
+        }
+      }
+    }
+  }
+  .forecast{
+    .daysforecast{
+    background-color: var(--dark-2-1);
+  }
+  } 
+
+  .hourly-forecast{
+    background-color: var(--dark-2-1);
+      .hourly-list{
+    background: var(--dark-bg-black);
+    
+  }
+   
+  }
+
+  
+}
+

@@ -1,0 +1,80 @@
+.wether-ri{
+    display: grid;
+    grid-template-columns: repeat(2 , max(107px));
+    align-items: baseline;
+    padding-top: 26px;
+    padding-right: 8.6px;
+    .info{
+        text-align: center;
+        padding-top: 4px;
+        img{
+            filter: brightness(0);
+        }
+        p{
+            font-size: 20px;
+            padding-top: 1px;
+            font-weight: 600;
+        }
+        span{
+            display: block;
+            padding-top: 1px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+
+/* tablet */
+
+@media screen and (max-width: 1440px){
+
+  .wether-ri {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 20px;
+    padding-right: 5px;
+    gap: 10px;
+
+    .info {
+      p {
+        font-size: 18px;
+      }
+
+      span {
+        font-size: 14px;
+      }
+
+      img {
+        width: 28px;
+      }
+    }
+  }
+}
+
+
+/* mobile */
+@media screen and (max-width: 992px){
+
+  .wether-ri {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding-top: 15px;
+    padding-right: 0;
+    gap: 15px;
+
+    .info {
+      p {
+        font-size: 16px;
+      }
+
+      span {
+        font-size: 13px;
+      }
+
+      img {
+        width: 24px;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,123 @@
+.wether-continer {
+  display: grid;
+  grid-template-columns: 1fr 1.55fr;
+  gap: 55px;
+  margin-top: 49px;
+  max-width: 100%;
+}
+.wether-details {
+  max-width: 780px;
+  background-color: var(--whit-2-1);
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 15px 0 23.98px 24px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.main-details {
+  background-color: var(--whit-2-1);
+  /* لا تحط لون اسو في الخلفية  */
+  max-width: 510px;
+  padding: 53px 107px 48px 107px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.5);
+  /* color: var(--white); */
+  .loction {
+    h3 {
+      padding-bottom: 29px;
+      font-size: 36px;
+      font-weight: 200;
+    }
+  }
+  .daet-tim {
+    /* width: 296px; */
+    height: 144px;
+    h2 {
+      font-size: 66px;
+      font-weight: bold;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    p {
+      padding-top: 4px;
+      font-size: 20px;
+      font-weight: 200;
+    }
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 1440px) {
+  .wether-continer {
+    grid-template-columns: 1fr 1.3fr;
+    gap: 28px;
+  }
+
+  .wether-details {
+    max-width: 100%;
+    padding: 15px 15px 20px 20px;
+  }
+
+  .main-details {
+    max-width: 100%;
+    padding: 40px 60px;
+
+    .loction {
+      h3 {
+        font-size: 30px;
+        padding-bottom: 20px;
+      }
+    }
+
+    .daet-tim {
+      h2 {
+        font-size: 56px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 992px) {
+  .wether-continer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .wether-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .main-details {
+    max-width: 100%;
+    padding: 30px 20px;
+
+    .loction {
+      h3 {
+        font-size: 26px;
+      }
+    }
+
+    .daet-tim {
+      height: auto;
+
+      h2 {
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}

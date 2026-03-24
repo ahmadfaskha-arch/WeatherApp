@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "/assets/img/dayClouds.png",
+    "temp": 20,
+    "day": "Friday, 1 Sep"
+  },
+  {
+    "icon": "/assets/img/dayMist.png",
+    "temp": 22,
+    "day": "Saturday, 2 Sep"
+  },
+  {
+    "icon": "/assets/img/dayClear.png",
+    "temp": 27,
+    "day": "Sunday, 3 Sep"
+  },
+  {
+    "icon": "/assets/img/dayDrizzle.png",
+    "temp": 18,
+    "day": "Monday, 4 Sep"
+  },
+  {
+    "icon": "/assets/img/dayrin.png",
+    "temp": 16,
+    "day": "Tuesday, 5 Sep"
+  }
+]
