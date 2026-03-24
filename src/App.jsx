@@ -10,10 +10,10 @@ function App() {
   return (
     <>
       <Navbar
-        searchImg="/assets/img/searchicon.png"
+        searchImg="assets/img/searchicon.png"
         search="Search for your preferred city..."
         discripton="Current Location"
-        img="/assets/img/lognavbar.png"
+        img="assets/img/lognavbar.png"
         setCity={setCity}
       />
 
